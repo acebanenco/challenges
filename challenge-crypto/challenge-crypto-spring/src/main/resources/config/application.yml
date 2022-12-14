@@ -1,0 +1,27 @@
+#
+app:
+  challenge:
+    crypto:
+      # condition:
+        # leading-zero-bits-threshold: 8
+      repository:
+        # logging:
+          # hex-format:
+            # delimiter: " "
+      input:
+        # message: classpath:messages/lorem1k_message.txt
+      salt:
+        minValue: 0
+        maxValue: 100_000_000
+      # digest:
+        # BC is slower compared to standard implementation on Win64 JDK19
+        # providerName: "BC"
+        # providerClass: "org.bouncycastle.jce.provider.BouncyCastleProvider"
+
+        # Amazon Corretto, Linux only
+        # providerName: "AmazonCorrettoCryptoProvider"
+        # providerClass: "com.amazon.corretto.crypto.provider.AmazonCorrettoCryptoProvider"
+
+        # OpenSSL JNR wrapper
+        # providerName: OpenSSL
+        # providerClass: com.acebanenco.challenge.crypto.openssl.OpenSslProvider

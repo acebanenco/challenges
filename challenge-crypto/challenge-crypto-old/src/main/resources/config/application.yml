@@ -1,0 +1,10 @@
+#
+app:
+  challenge:
+    crypto:
+      condition:
+        leading-zero-bits-threshold: 8
+      repository:
+        logging:
+          hex-format:
+            delimiter: " "

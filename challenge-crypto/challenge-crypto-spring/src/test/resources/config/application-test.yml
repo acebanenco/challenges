@@ -1,0 +1,13 @@
+#
+app:
+  challenge:
+    crypto:
+      condition:
+        # keep 3 bytes leading for tests to pass
+        # even if it's changed in the main yaml file
+        leading-zero-bits-threshold: 24
+      salt:
+        minValue: 5364000
+        maxValue: 5364999
+      input:
+        message:

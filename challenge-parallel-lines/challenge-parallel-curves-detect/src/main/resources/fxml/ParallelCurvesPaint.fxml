@@ -1,0 +1,25 @@
+<?import com.acebanenco.challenge.curves.CanvasPane?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.acebanenco.challenge.curves.ParallelCurvesController">
+    <top>
+        <ToolBar prefWidth="640">
+            <Button text="Clear" onAction="#clearButtonOnAction"/>
+            <Button text="Change Color" onAction="#changeColorButtonOnAction"/>
+        </ToolBar>
+    </top>
+    <center>
+        <CanvasPane prefWidth="640" prefHeight="480">
+            <canvas>
+                <Canvas fx:id="paintCanvas"
+                        onMousePressed="#paintCanvasOnMousePressed"
+                        onMouseDragged="#paintCanvasOnMouseDragged"
+                        onMouseReleased="#paintCanvasOnMouseReleased"
+                />
+            </canvas>
+        </CanvasPane>
+    </center>
+</BorderPane>

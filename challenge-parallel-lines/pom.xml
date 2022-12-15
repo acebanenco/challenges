@@ -16,6 +16,7 @@
 
     <modules>
         <module>challenge-expression-parser</module>
+        <module>challenge-parallel-curves-detect</module>
     </modules>
 
 </project>
